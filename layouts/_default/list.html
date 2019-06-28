@@ -20,7 +20,9 @@
       {{ .Summary | plainify | emojify }}
       {{ end }}
     </div>
+    {{ partial "tags.html" . }}
   </div>
+  <hr>
   {{ end }}
 
   {{ partial "pagination" . }}
